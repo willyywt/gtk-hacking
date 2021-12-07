@@ -50,6 +50,7 @@ static void do_drawing(cairo_t *cr) {
 }
 
 static gboolean on_draw_event(GtkWidget *widget, cairo_t *cr, gpointer user_data) {
+	g_return_val_if_fail(GTK_IS_WIDGET(widget), FALSE);
 	do_drawing(cr);
 	return FALSE;
 }

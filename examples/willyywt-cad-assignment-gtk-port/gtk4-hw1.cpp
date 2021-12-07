@@ -55,6 +55,7 @@ on_draw_event (GtkDrawingArea *area,
                int             width,
                int             height,
 	       gpointer        data) {
+	g_return_if_fail(GTK_IS_DRAWING_AREA(area));
 	do_drawing(cr);
 }
 static void activate(GtkApplication *app) {
