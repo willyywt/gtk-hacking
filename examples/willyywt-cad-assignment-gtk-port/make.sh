@@ -10,4 +10,4 @@ if [ $ARG1 == "pch" ] ; then
 	exit 0
 fi
 HW="hw$ARG1"
-g++ `pkg-config --cflags gtk+-3.0` -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter $HW.cpp sap84data.cpp hw_utils.cpp `pkg-config --libs gtk+-3.0` -o $HW
+g++ `pkg-config --cflags gtk+-3.0` -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter $HW.cpp sap84data-$ARG1.cpp hw_utils.cpp `pkg-config --libs gtk+-3.0` -o $HW
