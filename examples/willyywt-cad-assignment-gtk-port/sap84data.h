@@ -45,4 +45,4 @@ struct SAP84Data_error {
 };
 
 SAP84Data* SAP84_read(FILE* file, SAP84Data_error** error);
-void SAP84_delete(SAP84Data* data);
+void SAP84_delete(SAP84Data** data);

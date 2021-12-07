@@ -277,6 +277,7 @@ SAP84Data* SAP84_read(FILE* file, SAP84Data_error** error) {
 	return data;
 }
 
-void SAP84_delete(SAP84Data* data) {
-	delete data;
+void SAP84_delete(SAP84Data** data) {
+	delete *data;
+	*data = NULL;
 }

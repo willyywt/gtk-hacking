@@ -74,7 +74,7 @@ static void activate(GtkApplication *app) {
 }
 
 static void shutdown(GtkApplication *app) {
-	SAP84_delete(global_status.data);
+	SAP84_delete(&global_status.data);
 }
 
 static void print_usage() {
